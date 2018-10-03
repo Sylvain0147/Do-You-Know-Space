@@ -1,0 +1,67 @@
+#containerFooter{
+    background: black;
+    color: white;
+    height: 3em;
+    padding-top: 1%;
+}
+
+#logoFacebook{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#logoFacebook:hover{
+    color: #3b5998;
+    text-decoration: none;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#logoTwitter{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#logoTwitter:hover{
+    color: #55acee;
+    text-decoration: none;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#logoLinkedin{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#logoLinkedin:hover{
+    color: #0077b5;
+    text-decoration: none;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#logoGoogle{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#logoGoogle:hover{
+    color: #dc4e41;
+    text-decoration: none;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.textFooter:hover{
+    text-decoration: none;
+    color: #83fce6;
+}
