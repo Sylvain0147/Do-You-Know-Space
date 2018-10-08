@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-menu-quiz.component.css']
 })
 export class PageMenuQuizComponent implements OnInit {
-
+      
   constructor() { }
 
   ngOnInit() {
