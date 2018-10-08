@@ -3,6 +3,8 @@
     color: white;
     height: 3em;
     padding-top: 1%;
+    position: absolute;
+    bottom: 0;
 }
 
 #logoFacebook{
@@ -65,3 +67,4 @@
     text-decoration: none;
     color: #83fce6;
 }
+
