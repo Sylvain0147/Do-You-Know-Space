@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageMenuQuizComponent } from './page-menu-quiz/page-menu-quiz.component';
 import { PageQuestionComponent } from './page-question/page-question.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PageContactComponent } from './page-contact/page-contact.component';
     FooterComponent,
     PageMenuQuizComponent,
     PageQuestionComponent,
-    PageContactComponent
+    PageContactComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule
