@@ -4,7 +4,7 @@
     color: #4ff2e7;
     margin-bottom: 10%;
     width: 100%;
-    box-shadow: 5px 5px 5px orange;
+    box-shadow: 5px 5px 5px yellow;
     font-weight: bold;
     
 }
@@ -17,6 +17,6 @@
     font-weight: bolder;
 }
 
-#containerLogo{
-    margin-bottom: 20%;
+#containerLanding{
+    margin-top: 20%;
 }

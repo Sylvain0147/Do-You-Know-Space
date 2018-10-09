@@ -30,10 +30,11 @@ import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
     HttpModule,
     RouterModule.forRoot(
       [
-        { path: "landing", component: LandingComponent},
-        { path: "menuQuiz", component: PageMenuQuizComponent },
-        { path: "accueilDoc", component: AccueilDocComponent},
-        { path: "contact", component: PageContactComponent}
+        { path: "landing", component: LandingComponent, pathMatch: "full"}, 
+        { path: "menuQuiz", component: PageMenuQuizComponent, pathMatch: "full" },
+        { path: "accueilDoc", component: AccueilDocComponent, pathMatch: "full"},
+        { path: "contact", component: PageContactComponent, pathMatch: "full"},
+        { path: "", redirectTo: "landing", pathMatch: "full"}
       ],
 
       {useHash: true}
