@@ -15,7 +15,7 @@ import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
     HeaderComponent,
     FooterComponent,
     PageMenuQuizComponent,
-    AccueilDocComponent
+    AccueilDocComponent,
     PageQuestionComponent,
     PageContactComponent,
     LandingComponent
