@@ -13,6 +13,7 @@ import { PageQuestionComponent } from './page-question/page-question.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
 import { LandingComponent } from './landing/landing.component';
 import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
         { path: "landing", component: LandingComponent},
         { path: "menuQuiz", component: PageMenuQuizComponent },
         { path: "accueilDoc", component: AccueilDocComponent},
-        { path: "contact", component: PageContactComponent}
+        { path: "contact", component: PageContactComponent},
+        { path: "", redirectTo: "landing",   pathMatch: 'full'}
       ],
 
       {useHash: true}
