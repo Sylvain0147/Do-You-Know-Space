@@ -8,6 +8,13 @@
     margin-top: 10%;
     margin-bottom: 10%;
 }
-
+.btn {
+    width: 30%;
+}
+.tailleDiv {
+    width: 50%;
+    height: 100%;
+    font-size: 2rem;
+}
 
 
