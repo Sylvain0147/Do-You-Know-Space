@@ -1,0 +1,51 @@
+* {
+    background:url("sun.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+
+#logo-accueil-doc {
+    color: white;
+    padding-left: 5%;
+    font-size: 1.5em;
+}
+
+#titre-accueil-doc {
+    color: white;
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 5%;
+}
+
+/*  */
+
+#sommaire-doc {
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.col {
+    color: white;
+}
+
+
+
+#exoplanets {
+    margin-top: 10%;
+}
+
+#choice {
+    align-content: center;
+    font-size: 1em;
+    padding-left: 10%;
+}
+
+#blackhole {
+    margin-top: 10%;
+}
+
+#datas {
+    margin-top: 10%;
+    text-align: center;
+}
