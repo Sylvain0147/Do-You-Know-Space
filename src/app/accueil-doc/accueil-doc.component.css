@@ -1,12 +1,7 @@
-* {
-    background:url("sun.jpg") no-repeat;
-    background-size: cover;
-}
-
 
 
 #logo-accueil-doc {
-    color: white;
+    color: black;
     padding-left: 5%;
     font-size: 1.5em;
 }
@@ -25,13 +20,9 @@
     padding: 5%;
 }
 
-h3 {
-    color:white;
-}
-
-#exoplanets {
-
-}
-.bordure{
-    padding-right: 6%;
+.btn {
+    border-radius: 50%;
+    border-color: black;
+    opacity: 0.5;
+    padding: 10%;
 }
