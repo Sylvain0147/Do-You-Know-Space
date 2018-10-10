@@ -14,6 +14,7 @@ import { PageContactComponent } from './page-contact/page-contact.component';
 import { LandingComponent } from './landing/landing.component';
 import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
 import { DocArticleComponent } from './doc-article/doc-article.component';
+import { HighScoresComponent } from './high-scores/high-scores.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { DocArticleComponent } from './doc-article/doc-article.component';
     PageQuestionComponent,
     PageContactComponent,
     LandingComponent,
-    DocArticleComponent
+    DocArticleComponent,
+    HighScoresComponent
   ],
   imports: [
     BrowserModule,
