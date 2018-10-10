@@ -1,3 +1,22 @@
-<div>
-
+<div class="container">
+    <div class="row justify-content-center">
+        <img src="assets/exemple.jpg" alt="espace" class="rounded-circle img-fluid"/>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="container">
+        <p class="p-question text-center col-lg-11 col-md-11 col-sm-11">Which planet is the closest to the Sun?</p>
+        </div>
+        <div class="container col-sm-9 d-flex justify-content-center">
+            <label>
+                <input [(ngModel)]="answer" placeholder="answer" class="input">
+            </label>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
+        <a href="#" class="btn btn-primary validate btn-lg active" role="button" aria-pressed="true">VALIDATE</a>
+      </div>
 </div>

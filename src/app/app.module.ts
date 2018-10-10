@@ -14,8 +14,12 @@ import { PageContactComponent } from './page-contact/page-contact.component';
 import { LandingComponent } from './landing/landing.component';
 import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
 import { DocArticleComponent } from './doc-article/doc-article.component';
+<<<<<<< HEAD
+import { HighScoresComponent } from './high-scores/high-scores.component';
+=======
 import { CGUComponent } from './cgu/cgu.component';
 import { LegalMentionComponent } from './legal-mention/legal-mention.component';
+>>>>>>> f820fcdcbfe1aa7300d2c98e5a1590b206eaf253
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,8 +31,12 @@ import { LegalMentionComponent } from './legal-mention/legal-mention.component';
     PageContactComponent,
     LandingComponent,
     DocArticleComponent,
+<<<<<<< HEAD
+    HighScoresComponent
+=======
     CGUComponent,
     LegalMentionComponent
+>>>>>>> f820fcdcbfe1aa7300d2c98e5a1590b206eaf253
   ],
   imports: [
     BrowserModule,
