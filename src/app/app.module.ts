@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,7 +27,20 @@ import { DocArticleComponent } from './doc-article/doc-article.component';
     DocArticleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(
+      [
+        { path: "landing", component: LandingComponent, pathMatch: "full"}, 
+        { path: "menuQuiz", component: PageMenuQuizComponent, pathMatch: "full" },
+        { path: "accueilDoc", component: AccueilDocComponent, pathMatch: "full"},
+        { path: "contact", component: PageContactComponent, pathMatch: "full"},
+        { path: "", redirectTo: "landing", pathMatch: "full"}
+      ],
+
+      {useHash: true}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
