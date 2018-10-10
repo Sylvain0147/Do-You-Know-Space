@@ -14,6 +14,8 @@ import { PageContactComponent } from './page-contact/page-contact.component';
 import { LandingComponent } from './landing/landing.component';
 import { AccueilDocComponent} from './accueil-doc/accueil-doc.component';
 import { DocArticleComponent } from './doc-article/doc-article.component';
+import { CGUComponent } from './cgu/cgu.component';
+import { LegalMentionComponent } from './legal-mention/legal-mention.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { DocArticleComponent } from './doc-article/doc-article.component';
     PageQuestionComponent,
     PageContactComponent,
     LandingComponent,
-    DocArticleComponent
+    DocArticleComponent,
+    CGUComponent,
+    LegalMentionComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,8 @@ import { DocArticleComponent } from './doc-article/doc-article.component';
         { path: "menuQuiz", component: PageMenuQuizComponent, pathMatch: "full" },
         { path: "accueilDoc", component: AccueilDocComponent, pathMatch: "full"},
         { path: "contact", component: PageContactComponent, pathMatch: "full"},
+        { path: "cgu", component: CGUComponent, pathMatch: "full"},
+        { path: "legalMentions", component: LegalMentionComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
       ],
 
