@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-html, body{
+html{
     height: 100%;
+}
+
+
+body{
+    min-height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
     background-image: url("assets/milky-way.jpg");
     background-size: cover;
+    padding-bottom: 6em;
 }
