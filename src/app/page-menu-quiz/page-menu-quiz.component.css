@@ -5,9 +5,14 @@
     margin-top: 5%;
 }
 .placetoibien{
-    margin-top: 10%;
+    margin-top: 4%;
     
 }
+
+a{
+    color: white;
+}
+
 .btn {
     width: 45%;
     background-image:linear-gradient(#000000, red, blue, yellow, green, purple, pink);
@@ -34,10 +39,27 @@
 }
 .easy{
      box-shadow: 10px 10px 10px chartreuse;
+     color: white;
 }
 .medium{
      box-shadow: 10px 10px 10px Darkorange;
 }
 .hard{
      box-shadow: 10px 10px 10px crimson;
+}
+
+.boutonClick{
+    width: 45%;
+    background-image: url("flamme.jpg");
+    border-radius: 100%;
+    color: #4ff2e7;
+    font-weight: bold;
+    margin-bottom: 2%;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: none;
+    font-weight: bolder;
+    text-align: center;
+    box-shadow: 0px 0px 10px 8px darkorange;
 }
