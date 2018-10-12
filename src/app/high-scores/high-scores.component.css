@@ -8,3 +8,25 @@ table{
     text-align: center;
     width: 70%;
 }
+.tailleDiv{
+    margin-top: 20%;
+    width: 100%;
+}
+.btn{
+    background-image:linear-gradient(#000000, red, blue, yellow, green, purple, pink);
+    border-radius: 100%;
+    color: #4ff2e7;
+    margin-bottom: 10%;
+    width: 100%;
+    box-shadow: 5px 5px 5px orange;
+    font-weight: bold;
+    
+}
+
+.btn:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: none;
+    font-weight: bolder;
+}
