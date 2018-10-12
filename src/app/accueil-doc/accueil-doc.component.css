@@ -22,7 +22,21 @@
 
 .btn {
     border-radius: 50%;
-    border-color: black;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 1);
     padding: 10%;
+}
+
+.btn:hover{
+    background-image: url("comet.jpg");
+    background-size: cover;
+}
+
+#list{
+    width: 56%;
+}
+@media all and (max-width: 560px){
+    .col-12{
+        text-align: center;
+    }
 }
