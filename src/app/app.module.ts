@@ -44,8 +44,6 @@ import { LegalMentionComponent } from './legal-mention/legal-mention.component';
         { path: "contact", component: PageContactComponent, pathMatch: "full"},
         { path: "cgu", component: CGUComponent, pathMatch: "full"},
         { path: "legalMentions", component: LegalMentionComponent, pathMatch: "full"},
-        { path: "pageQuestion", component: PageQuestionComponent, pathMatch: "full"},
-        { path: "highScore", component: HighScoresComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
       ],
 
