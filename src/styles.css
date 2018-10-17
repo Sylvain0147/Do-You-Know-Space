@@ -10,7 +10,7 @@ body{
     padding: 0;
     padding-top: 1%;
     position: relative;
-    background-image: url("assets/milky-way.jpg");
+    background-image: url('assets/earth2.jpg');
     background-size: cover;
     padding-bottom: 6em;
 }
