@@ -11,6 +11,7 @@
 
 * {
     font-family: "CRYSIS Bold";
+    font-size: 1em;
 }
 
 html{
@@ -27,6 +28,7 @@ body{
     background-image: url('assets/earth2.jpg');
     background-size: cover;
     padding-bottom: 6em;
-
 }
+
+
 
