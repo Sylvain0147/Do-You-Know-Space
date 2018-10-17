@@ -1,4 +1,4 @@
-h1{
+a{
     color: white;
     font-size: 3em;
     font-weight: bold;
@@ -21,4 +21,74 @@ a:hover{
     .icone{
         margin-bottom: 25%;
     }
+}
+
+/*--------------------------------------------------TEST--------------------------------------------------------*/
+
+
+
+div p {
+  display: inline-block;
+  font-size: 72px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 20px;
+  float: left;
+  opacity: 0.0;
+  animation: port 3s 1 forwards;
+  -webkit-animation: port 3s 1 forwards;
+}
+
+div p:nth-of-type(2){
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+
+div p:nth-of-type(3){
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+div p:nth-of-type(4){
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+
+div p:nth-of-type(5){
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+
+@keyframes port {
+  0%{
+    transform: rotateY(90deg) translateY(25%);
+    opacity: 0.0;
+  }
+  100%{
+    transform: rotateY(0deg) translateY(0%);
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes port {
+  0%{
+   -webkit-transform: rotateY(90deg) translateY(25%);
+    opacity: 0.0;
+  }
+  100%{
+    -webkit-transform: rotateY(0deg) translateY(0%);
+    opacity: 1.0;
+  }
+}
+
+@keyframes reset {
+  0%{}
+  100%{}
+}
+
+@-webkit-keyframes reset {
+  0%{}
+  100%{}
 }

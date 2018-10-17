@@ -17,6 +17,7 @@ import { DocArticleComponent } from './doc-article/doc-article.component';
 import { HighScoresComponent } from './high-scores/high-scores.component';
 import { CGUComponent } from './cgu/cgu.component';
 import { LegalMentionComponent } from './legal-mention/legal-mention.component';
+import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { LegalMentionComponent } from './legal-mention/legal-mention.component';
     DocArticleComponent,
     HighScoresComponent,
     CGUComponent,
-    LegalMentionComponent
+    LegalMentionComponent,
+    MenuQuizThemeComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,7 @@ import { LegalMentionComponent } from './legal-mention/legal-mention.component';
         { path: "legalMentions", component: LegalMentionComponent, pathMatch: "full"},
         { path: "pageQuestion", component: PageQuestionComponent, pathMatch: "full"},
         { path: "highScore", component: HighScoresComponent, pathMatch: "full"},
+        { path: "menuTheme", component: MenuQuizThemeComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
       ],
 
