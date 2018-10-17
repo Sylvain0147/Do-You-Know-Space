@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family:"CRYSIS Bold";
+    src:url("assets/CRYSISB.eot?") format("eot"),
+    url("assets/CRYSISB.woff") format("woff"),
+    url("assets/CRYSISB.ttf") format("truetype"),
+    url("assets/CRYSISB.svg#CRYSIS-Bold") format("svg");
+    font-weight:normal;font-style:normal;
+}
+
+
+* {
+    font-family: "CRYSIS Bold";
+}
+
 html{
     height: 100%;
 }
@@ -13,4 +27,6 @@ body{
     background-image: url("assets/milky-way.jpg");
     background-size: cover;
     padding-bottom: 6em;
+
 }
+
