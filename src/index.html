@@ -20,13 +20,23 @@
 <script src="src/test-timer.js"></script>
 <script type="text/javascript">
     function p(){
-    var imgCount = 3;
+    var imgCount = 11;
         var dir = 'assets/';
         var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
         var images = new Array
-                images[1] = "earth1.jpeg",
+                images[1] = "space2.jpg",
                 images[2] = "earth2.jpg",
                 images[3] = "earth3.jpg",
+                images[4] = "vortex.jpg",
+                images[5] = "earth5.jpg",
+                images[6] = "planet.jpg",
+                images[7] = "planet1.jpg",
+                images[8] = "planet2.jpg",
+                images[9] = "planet3.jpg",
+                images[10] = "planet4.jpg",
+                images[11] = "space.jpg",
+                images[11] = "space1.jpg"
+                
         document.getElementById("divID").style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
     }
    </script>
