@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageQuestionComponent implements OnInit {
   exemple: string = "answer"
-
+  
   constructor() { }
 
   ngOnInit() {
