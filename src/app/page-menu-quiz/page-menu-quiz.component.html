@@ -1,39 +1,14 @@
 <div class="container-fluid placetoibien">
   <div class="row d-flex justify-content-around">
     <div class="container col-12 col-sm-4 col-md-4 col-lg-4 mt-2 d-flex justify-content-center">
-      <a class="btn tailleDiv easy btn-lg active text-white" role="button" aria-pressed="true" (click)="shouldShow1 = !shouldShow1" [ngClass]="{boutonClick: shouldShow1, btn: !shouldShow1}">Easy</a>
+      <label for="switch" class="button" routerLink="/menuTheme" id="easy"><a>Easy</a></label>
     </div>
     <div class="container col-12 col-sm-4 col-md-4 col-lg-4 mt-2 d-flex justify-content-center">
-        <a class="btn tailleDiv medium btn-lg active text-white" role="button" aria-pressed="true" (click)="shouldShow2 = !shouldShow2" [ngClass]="{boutonClick: shouldShow2, btn: !shouldShow2}">Medium</a>
+      <label for="switch" class="button" routerLink="/menuTheme" id="medium"><a>Medium</a></label>
     </div>
     <div class="container col-12 col-sm-4 col-md-4 col-lg-4 mt-2 d-flex justify-content-center">
-        <a class="btn tailleDiv hard btn-lg active text-white" role="button" aria-pressed="true" (click)="shouldShow3 = !shouldShow3" [ngClass]="{boutonClick: shouldShow3, btn: !shouldShow3}">Hard</a>
+      <label for="switch" class="button" routerLink="/menuTheme" id="hard"><a>Hard</a></label>
     </div>
   </div>
 </div>
-  <div class="container">
-    <div class="row p-m-quiz-row">
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-        <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" (click)="shouldShow4 = !shouldShow4" [ngClass]="{boutonClick: shouldShow4, btn: !shouldShow4}">Solar system</a>
-      </div>
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-          <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" (click)="shouldShow5 = !shouldShow5" [ngClass]="{boutonClick: shouldShow5, btn: !shouldShow5}">Constellations</a>
-      </div>
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-          <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" (click)="shouldShow6 = !shouldShow6" [ngClass]="{boutonClick: shouldShow6, btn: !shouldShow6}">Big Bang</a>
-      </div>
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-          <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" (click)="shouldShow7 = !shouldShow7" [ngClass]="{boutonClick: shouldShow7, btn: !shouldShow7}">Astéroid</a>
-      </div>
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-        <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" (click)="shouldShow8 = !shouldShow8" [ngClass]="{boutonClick: shouldShow8, btn: !shouldShow8}">Black Hole</a>
-      </div>
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-        <a class="btn btn-primary btn-lg  active bouton" role="button" aria-pressed="true" (click)="shouldShow9 = !shouldShow9" [ngClass]="{boutonClick: shouldShow9, btn: !shouldShow9}">Exoplanets</a>
-      </div>
-      <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-        <a routerLink="/pageQuestion"  class="btn btn-primary validate btn-lg active" role="button" aria-pressed="true" >VALIDATE </a>
-      </div>
-    </div>
-  </div>
 
