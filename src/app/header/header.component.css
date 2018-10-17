@@ -1,13 +1,6 @@
-a{
-    color: white;
-    font-size: 3em;
-    font-weight: bold;
-}
 
-a:hover{
-    text-decoration: none;
-    color: white;
-}
+
+
 @media all and (max-width: 640px){
     .icone {
         
@@ -29,7 +22,8 @@ a:hover{
 
 div p {
   display: inline-block;
-  font-size: 72px;
+  font-size: 3em;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
   position: relative;
