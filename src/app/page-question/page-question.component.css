@@ -9,6 +9,26 @@
     text-align: center;
 }
 
+.rounded-circle{
+  color: white;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.7);
+  width: 5em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgba(29, 243, 40, 0.788);
+}
+
+#question{
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  width: 90%; 
+  border: solid 0.5px rgba(234, 248, 106, 0.589);
+  margin: 3%;
+}
+
 
 /*-----------------------------------------------------TEST-----------------------------------------------------------------*/
 
@@ -44,6 +64,7 @@
     overflow: hidden;
     cursor: pointer;
     z-index: 99;
+    margin: 3%;
   }
   .button:after {
     -moz-box-shadow: rgba(111, 233, 74, 0.75) 0 0 15px 2px;

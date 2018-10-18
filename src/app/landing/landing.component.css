@@ -55,6 +55,9 @@
     overflow: hidden;
     cursor: pointer;
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .button:after {
     -moz-box-shadow: rgba(111, 233, 74, 0.75) 0 0 15px 2px;

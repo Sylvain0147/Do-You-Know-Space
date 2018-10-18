@@ -1,3 +1,11 @@
+.title{
+  margin-top: 3%;
+}
+
+.logo{
+  position: relative;
+  bottom: 20px;
+}
 
 
 
@@ -21,12 +29,11 @@
 
 
 div p {
-  display: inline-block;
+
   font-size: 3em;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
-  position: relative;
   margin: 0 20px;
   float: left;
   opacity: 0.0;
