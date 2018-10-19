@@ -49,7 +49,9 @@ import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.compon
         { path: "pageQuestion", component: PageQuestionComponent, pathMatch: "full"},
         { path: "highScore", component: HighScoresComponent, pathMatch: "full"},
         { path: "menuTheme", component: MenuQuizThemeComponent, pathMatch: "full"},
+        { path: "DocArticles", component: DocArticleComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
+        
       ],
 
       {useHash: true}
