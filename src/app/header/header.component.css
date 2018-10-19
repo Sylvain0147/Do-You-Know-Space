@@ -7,6 +7,10 @@
   bottom: 20px;
 }
 
+.col-lg-9{
+  width:100%;
+}
+
 
 
 @media all and (max-width: 640px){

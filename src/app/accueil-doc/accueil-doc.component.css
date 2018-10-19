@@ -25,6 +25,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 0, 0, 1);
     padding: 10%;
+    transition: all 10s;
 }
 
 .btn:hover{

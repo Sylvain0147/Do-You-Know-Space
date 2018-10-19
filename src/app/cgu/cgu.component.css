@@ -5,6 +5,11 @@ p, h2, h3{
 
 h2, h3{
     font-weight: bold;
+    font-family: "CRYSIS Bold";
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2{

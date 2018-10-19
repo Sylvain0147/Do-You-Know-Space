@@ -1,9 +1,26 @@
 .card{
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 h2{
     color: white;
     font-size: 3em;
     text-align: center;
+    font-family: "CRYSIS Bold";
+}
+
+h5{
+    font-family: "CRYSIS Bold";
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    margin-bottom: 3%;
+}
+
+.card-img-top{
+    margin-top: 5%;
 }
