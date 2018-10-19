@@ -24,3 +24,7 @@ a{
 .card-img-top{
     margin-top: 5%;
 }
+
+body{
+    background: fixed;
+}
