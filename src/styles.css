@@ -26,6 +26,7 @@ body{
     padding-top: 1%;
     position: relative;
     background-image: url('assets/earth2.jpg');
+    background: fixed;
     background-size: cover;
     padding-bottom: 6em;
 }
