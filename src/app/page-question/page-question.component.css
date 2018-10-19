@@ -8,7 +8,9 @@
     width: 100%;
     text-align: center;
 }
-
+.field {
+ 
+}
 .rounded-circle{
   color: white;
   font-size: 2em;
@@ -203,3 +205,28 @@
       color: white;
       text-decoration: none;
   }
+.flex { display:flex;}
+
+.field {
+  min-width: 200px;
+  min-height: 30px;
+  margin: 1%;
+  font-size: 1.5em;
+   color: white;
+}
+.field1{
+  padding: 2%;
+   color: white;
+   font-size: 1.5em;
+}
+
+.button1 {
+  height: 40px;
+  width: 200px;
+  outline: none;
+  background: white;
+}
+
+.button1:active {
+  background: blue;
+}

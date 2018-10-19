@@ -1,23 +1,36 @@
 <div class="container">
     <div class="row justify-content-center">
-        <div class="rounded-circle img-fluid"><span id="time">30</span></div>
+        <div class="rounded-circle img-fluid"><span id="time">15</span></div>
     </div>
 </div>
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="container" id="question">
-        <p class="p-question text-center col-lg-11 col-md-11 col-sm-11">Which planet is the closest to the Sun?</p>
-        </div>
-        <div class="container col-sm-9 d-flex justify-content-center">
-            <label>
-                <input [(ngModel)]="answer" placeholder="answer" class="input">
-            </label>
+    <div class="flex">
+        <div class="field1">Question</div>
+        <div id="question" class="field"></div>
+    </div>
+    <div class="flex">
+        <div class="field">Answer A</div>
+        <button class="button1" id="answerA" onclick="answerA_clicked()"></button>
+    </div>
+    <div class="flex">
+        <div class="field">Answer B</div>
+        <button class="button1" id="answerB" onclick="answerB_clicked()"></button>
+    </div>
+    <div class="flex">
+        <div class="field">Answer C</div>
+        <button class="button1" id="answerC" onclick="answerC_clicked()"></button>
+    </div>
+    <div class="flex">
+        <div class="field">Answer D</div>
+        <button class="button1" id="answerD" onclick="answerD_clicked()"></button>
+    </div>
+    <div class="flex">
+        <div class="field">Score</div>
+        <div id="score" class="field">0</div>
+    </div>
+    <div class="container">
+        <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
+            <label for="switch" class="button" routerLink="/highScore" onclick="p()"><a>VALIDATE</a></label>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-        <label for="switch" class="button" routerLink="/highScore" onclick="p()"><a>VALIDATE</a></label>
-      </div>
-</div>
-<!-- <script src="test-timer.js"></script> -->
+    <script src="test-quiz.js"></script>
