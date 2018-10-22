@@ -5,43 +5,40 @@
 <div id = "container-fluid" id="sommaire-doc">
   <div class="row">
     <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4" id="constellations">
-      <button type="button" class="btn btn-secondary btn-lg">Constellations</button>
+      <button type="button" routerLink="/mercuryDoc" class="btn btn-secondary btn-lg">Mercury</button>
     </div>
 
     <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4" id="exoplanets">
-      <button type="button" class="btn btn-secondary btn-lg">Exoplanets</button>
+      <button type="button" class="btn btn-secondary btn-lg" routerLink="/venusDoc">Venus</button>
     </div>
 
         <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4" id="solarsystem">
-          <button type="button" routerLink="/DocArticles" class="btn btn-secondary btn-lg">Solar System </button>
-
-          <select class="custom-select" id="list">
-            <option selected>Jupiter</option>
-            <option value="1">Mars</option>
-            <option value="2">Neptune</option>
-            <option value="3">Mercury</option>
-            <option value="3">Saturn</option>
-            <option value="3" >Earth</option>
-            <option value="3">Uranus</option>
-            <option value="3">Venus</option>
-          </select>
-      
+          <button type="button" routerLink="/docArticle" class="btn btn-secondary btn-lg">Earth</button>
         
       </div>
    </div> 
 
    <div class="row text-right">
     <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="blackhole">
-      <button type="button" class="btn btn-secondary btn-lg">Black Hole</button>
+      <button type="button" class="btn btn-secondary btn-lg" routerLink="/marsDoc">Mars</button>
       </div>
   
       <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="bigbang">
-        <button type="button" class="btn btn-secondary btn-lg">Big Bang</button>
+        <button type="button" class="btn btn-secondary btn-lg" routerLink="/jupiterDoc">Jupiter</button>
       </div>
   
       <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="datas">
-        <button type="button" class="btn btn-secondary btn-lg">Datas</button>
+        <button type="button" class="btn btn-secondary btn-lg" routerLink="/saturnDoc">Saturn</button>
       </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="datas">
+          <button type="button" class="btn btn-secondary btn-lg" routerLink="/uranusDoc">Uranus</button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="datas">
+            <button type="button" class="btn btn-secondary btn-lg" routerLink="/neptuneDoc">Neptune</button>
+          </div>
+
   </div>
 </div>
 

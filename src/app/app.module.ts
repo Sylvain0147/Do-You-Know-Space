@@ -18,6 +18,13 @@ import { HighScoresComponent } from './high-scores/high-scores.component';
 import { CGUComponent } from './cgu/cgu.component';
 import { LegalMentionComponent } from './legal-mention/legal-mention.component';
 import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.component';
+import { MarsDocComponent } from './mars-doc/mars-doc.component';
+import { MercuryDocComponent } from './mercury-doc/mercury-doc.component';
+import { VenusDocComponent } from './venus-doc/venus-doc.component';
+import { JupiterDocComponent } from './jupiter-doc/jupiter-doc.component';
+import { SaturnDocComponent } from './saturn-doc/saturn-doc.component';
+import { UranusDocComponent } from './uranus-doc/uranus-doc.component';
+import { NeptuneDocComponent } from './neptune-doc/neptune-doc.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +39,14 @@ import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.compon
     HighScoresComponent,
     CGUComponent,
     LegalMentionComponent,
-    MenuQuizThemeComponent
+    MenuQuizThemeComponent,
+    MarsDocComponent,
+    MercuryDocComponent,
+    VenusDocComponent,
+    JupiterDocComponent,
+    SaturnDocComponent,
+    UranusDocComponent,
+    NeptuneDocComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +63,14 @@ import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.compon
         { path: "pageQuestion", component: PageQuestionComponent, pathMatch: "full"},
         { path: "highScore", component: HighScoresComponent, pathMatch: "full"},
         { path: "menuTheme", component: MenuQuizThemeComponent, pathMatch: "full"},
-        { path: "DocArticles", component: DocArticleComponent, pathMatch: "full"},
+        { path: "mercuryDoc", component: MercuryDocComponent, pathMatch: "full"},
+        { path: "venusDoc", component: VenusDocComponent, pathMatch: "full"},
+        { path: "marsDoc", component: MarsDocComponent, pathMatch: "full"},
+        { path: "jupiterDoc", component: JupiterDocComponent, pathMatch: "full"},
+        { path: "saturnDoc", component: SaturnDocComponent, pathMatch: "full"},
+        { path: "uranusDoc", component: UranusDocComponent, pathMatch: "full"},
+        { path: "neptuneDoc", component: NeptuneDocComponent, pathMatch: "full"},
+        { path: "docArticle", component: DocArticleComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
         
       ],
