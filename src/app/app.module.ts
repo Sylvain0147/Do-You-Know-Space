@@ -27,6 +27,9 @@ import { SaturnDocComponent } from './saturn-doc/saturn-doc.component';
 import { UranusDocComponent } from './uranus-doc/uranus-doc.component';
 import { NeptuneDocComponent } from './neptune-doc/neptune-doc.component';
 import { SunDocComponent } from './sun-doc/sun-doc.component';
+import { ConstellationsDocComponent } from './constellations-doc/constellations-doc.component';
+import { AsteroidsDocComponent } from './asteroids-doc/asteroids-doc.component';
+import { ExoplanetsDocComponent } from './exoplanets-doc/exoplanets-doc.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,9 +45,7 @@ import { SunDocComponent } from './sun-doc/sun-doc.component';
     CGUComponent,
     LegalMentionComponent,
     MenuQuizThemeComponent,
-<<<<<<< HEAD
-    QuizDirective
-=======
+    QuizDirective,
     MarsDocComponent,
     MercuryDocComponent,
     VenusDocComponent,
@@ -52,8 +53,10 @@ import { SunDocComponent } from './sun-doc/sun-doc.component';
     SaturnDocComponent,
     UranusDocComponent,
     NeptuneDocComponent,
-    SunDocComponent
->>>>>>> 926862b21947b7594cb0b6bfb55ec896ae00d9df
+    SunDocComponent,
+    ConstellationsDocComponent,
+    AsteroidsDocComponent,
+    ExoplanetsDocComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +82,11 @@ import { SunDocComponent } from './sun-doc/sun-doc.component';
         { path: "neptuneDoc", component: NeptuneDocComponent, pathMatch: "full"},
         { path: "docArticle", component: DocArticleComponent, pathMatch: "full"},
         { path: "sunDoc", component: SunDocComponent, pathMatch: "full"},
+        { path: "constellationsDoc", component: ConstellationsDocComponent, pathMatch: "full"},
+        { path: "exoplanetsDoc", component: ExoplanetsDocComponent, pathMatch: "full"},
+        { path: "asteroidsDoc", component: AsteroidsDocComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
+
         
       ],
 
