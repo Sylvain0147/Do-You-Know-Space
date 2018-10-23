@@ -25,6 +25,7 @@ import { JupiterDocComponent } from './jupiter-doc/jupiter-doc.component';
 import { SaturnDocComponent } from './saturn-doc/saturn-doc.component';
 import { UranusDocComponent } from './uranus-doc/uranus-doc.component';
 import { NeptuneDocComponent } from './neptune-doc/neptune-doc.component';
+import { SunDocComponent } from './sun-doc/sun-doc.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,8 @@ import { NeptuneDocComponent } from './neptune-doc/neptune-doc.component';
     JupiterDocComponent,
     SaturnDocComponent,
     UranusDocComponent,
-    NeptuneDocComponent
+    NeptuneDocComponent,
+    SunDocComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +73,7 @@ import { NeptuneDocComponent } from './neptune-doc/neptune-doc.component';
         { path: "uranusDoc", component: UranusDocComponent, pathMatch: "full"},
         { path: "neptuneDoc", component: NeptuneDocComponent, pathMatch: "full"},
         { path: "docArticle", component: DocArticleComponent, pathMatch: "full"},
+        { path: "sunDoc", component: SunDocComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
         
       ],
