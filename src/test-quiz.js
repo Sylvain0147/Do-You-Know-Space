@@ -2,7 +2,7 @@
 var quiz = [];
 quiz[0] = new Question("Which planet is the closest to Sun?", "Mercury", "Venus", "Mars", "Earth");
 quiz[1] = new Question("What color is Mars?", "Red", "White", "Green", "Dark");
-quiz[2] = new Question("What is the name of the Earth'satellite?", "Moon", "Discovery", "Astra", "Spoutnik");
+quiz[2] = new Question("What is the name of the Earth's satellite?", "Moon", "Discovery", "Astra", "Spoutnik");
 quiz[3] = new Question("How many planets are in the Solar System ?", "8", "6", "4", "7");
 quiz[4] = new Question("In which year men set foot on Moon?", "1969", "1988", "1968", "1967");
 quiz[5] = new Question("Which astrophysicist is the Humanity's enemy?","Neil De Grasse Tyson", "Mohammed Ali", "Joe Frazier", "Georges Foreman");
