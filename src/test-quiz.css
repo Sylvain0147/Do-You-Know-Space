@@ -15,5 +15,5 @@ button {
 }
 
 button:active {
-  background: blue;
+  background: rgba(54, 199, 85, 0.3);
 }

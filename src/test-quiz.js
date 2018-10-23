@@ -2,7 +2,7 @@
 var quiz = [];
 quiz[0] = new Question("Which planet is the closest to Sun?", "Mercury", "Venus", "Mars", "Earth");
 quiz[1] = new Question("What color is Mars?", "Red", "White", "Green", "Dark");
-quiz[2] = new Question("What is the name of the Earth'satellite?", "Moon", "Discovery", "Astra", "Spoutnik");
+quiz[2] = new Question("What is the name of the Earth's satellite?", "Moon", "Discovery", "Astra", "Spoutnik");
 quiz[3] = new Question("How many planets are in the Solar System ?", "8", "6", "4", "7");
 quiz[4] = new Question("In which year men set foot on Moon?", "1969", "1988", "1968", "1967");
 quiz[5] = new Question("Which astrophysicist is the Humanity's enemy?","Neil De Grasse Tyson", "Mohammed Ali", "Joe Frazier", "Georges Foreman");
@@ -18,6 +18,10 @@ var randomQuestion;
 var answers = [];
 var currentScore = 0;
 
+function appelquiz(){
+  btnProvideQuestion();
+}
+
 document.addEventListener("DOMContentLoaded", function(event) { 
   btnProvideQuestion();
 });
@@ -28,6 +32,7 @@ function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2,wrongAnswer3) {
     this.wrongAnswer1 = wrongAnswer1;
     this.wrongAnswer2 = wrongAnswer2;
     this.wrongAnswer3 = wrongAnswer3;
+    
 };
 
 function shuffle(o) {
@@ -51,6 +56,12 @@ function btnProvideQuestion() {
   document.getElementById("answerC").innerHTML= answers[2];
   document.getElementById("answerD").value= answers[3];
   document.getElementById("answerD").innerHTML= answers[3];
+
+  
+  quiz.splice(randomNumber, 1);
+  console.log(quiz.length);
+  
+
 
 }
 
@@ -76,13 +87,14 @@ function answerD_clicked() {
 function adjustScore(isCorrect) {
   debugger;
   if (isCorrect) {
-    currentScore++;
+    currentScore += 10;
   } else {
     if (currentScore > 0) {
-      currentScore--;
+      currentScore -= 2;
   	}
   }
   document.getElementById("score").innerHTML = currentScore;
+  endquiz();
 }
 
 function checkAnswer(answer) {  
@@ -91,5 +103,10 @@ function checkAnswer(answer) {
     btnProvideQuestion();
   } else { 
     adjustScore(false);
-  }	  
+  }	 
+}
+function endquiz(){
+  if(quiz.length == 0){
+    alert("End of the quiz ! Your score is " + currentScore + " !  Press validate");
+}
 }

@@ -1,23 +1,34 @@
 
- function startTimer(duration, display) {
-    var timer = duration, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
+var sylvain_chrono_trigger = 0;
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
+function stopChrono(){
+    clearTimeout(sylvain_chrono_trigger);
 }
 
-window.onload = function () {
-    var fiveMinutes = 15 * 1,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+function chrono(param_secondes, display){
+    
+
+    var seconds = parseInt(param_secondes % 60, 10);
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = seconds;
+
+    if( param_secondes > 0 ){
+        stopChrono();
+        sylvain_chrono_trigger = setTimeout(
+            function(){
+                chrono(param_secondes - 1, display);
+            }, 
+            1000
+        );
+    }
+}
+
+function lancetoi() {
+    
+    var display = document.querySelector('.time');
+    stopChrono();
+    chrono(15, display);
+
 };
+

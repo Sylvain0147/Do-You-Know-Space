@@ -18,6 +18,7 @@ import { HighScoresComponent } from './high-scores/high-scores.component';
 import { CGUComponent } from './cgu/cgu.component';
 import { LegalMentionComponent } from './legal-mention/legal-mention.component';
 import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.component';
+import { QuizDirective } from './quiz.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { MenuQuizThemeComponent } from './menu-quiz-theme/menu-quiz-theme.compon
     HighScoresComponent,
     CGUComponent,
     LegalMentionComponent,
-    MenuQuizThemeComponent
+    MenuQuizThemeComponent,
+    QuizDirective
   ],
   imports: [
     BrowserModule,
