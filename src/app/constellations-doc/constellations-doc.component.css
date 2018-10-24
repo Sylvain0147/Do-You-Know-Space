@@ -1,0 +1,145 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-family: "CRYSIS Bold";
+}
+
+h3 {
+    text-align : center;
+    font-size: 1.8em;
+    color : white;
+    font-family: "CRYSIS Bold";
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5%;
+    
+}
+
+
+.container-article
+{
+    color: white;
+    font-size: 1.2em;
+    padding: 0%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 2%;
+    margin-bottom: 1%;
+}
+
+.image {
+    margin : 3%;
+}
+
+img{
+  height: 250px;
+  margin-top: 4%;
+  margin-left: 9%;
+}
+
+.col-3{
+  text-align: center;
+
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 250px;
+  height: 250px;
+  margin-bottom: 6%;
+  margin-top: 3%;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*----------------------------------------------TEST---------------------------------------------------*/
+
+
+  
+  .screen {
+    animation:colorPulse 5s infinite ease-in-out;
+    background-image:radial-gradient(#444, #111);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    box-shadow:0 0 5vmin 1vmin #000 inset;
+    box-sizing:border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    height:600px;
+    overflow:auto;
+    padding:3%;
+    width:100%;
+    text-align: justify;
+    
+  }
+  
+  .screen:before {
+    animation:wave 10s infinite ease-in-out;
+    content:"";
+    height:20vh;
+    left:0;
+    opacity:.5;
+    position:absolute;
+    right:0;
+    z-index:1;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size:4px 4px;
+    bottom:0;
+    height: 1900px;
+    content:"";
+    left:0;
+    pointer-events:none;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+  }
+  
+  p:last-child:after {
+    animation:blink 1s infinite;
+    content:"_";
+  }
+  
+  @keyframes colorPulse {
+    0%, 100% {
+      color:rgb(23, 238, 23);
+    }
+    48%, 52% {
+      color:rgb(27, 189, 27);
+    }
+    50% {
+      color:rgb(5, 172, 5);
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      box-shadow:0 -10vh 20vh #0c0;
+      top:-100vh;
+    }
+    48%, 52% {
+      box-shadow:0 -10vh 20vh #090;
+    }
+    50% {
+      box-shadow:0 -10vh 20vh #060;
+    }
+    100% {
+      box-shadow:0 -10vh 20vh #0c0;
+      top:200vh;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity:0;
+    }
+  }
+
