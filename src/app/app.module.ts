@@ -30,6 +30,7 @@ import { SunDocComponent } from './sun-doc/sun-doc.component';
 import { ConstellationsDocComponent } from './constellations-doc/constellations-doc.component';
 import { AsteroidsDocComponent } from './asteroids-doc/asteroids-doc.component';
 import { ExoplanetsDocComponent } from './exoplanets-doc/exoplanets-doc.component';
+import { NasaService } from './nasa.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,7 +94,7 @@ import { ExoplanetsDocComponent } from './exoplanets-doc/exoplanets-doc.componen
       {useHash: true}
     )
   ],
-  providers: [],
+  providers: [NasaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
