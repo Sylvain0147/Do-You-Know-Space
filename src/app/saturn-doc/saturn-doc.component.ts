@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NasaImageService } from "../nasa-image.service";
+import { ImgNasa } from "../img-nasa";
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-saturn-doc',
@@ -7,9 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaturnDocComponent implements OnInit {
 
-  constructor() { }
+  public planetImg: ImgNasa = null;
 
-  ngOnInit() {
+  public img: string = "";
+  public images: string[];
+
+  private service: NasaImageService;
+
+
+  constructor(
+    param_nasa_service: NasaImageService
+  ) {
+    this.planetImg = new ImgNasa("saturn", "saturn");
+    this.service = param_nasa_service;
+    this.img = "";
+    this.images = [];
   }
 
+  ngOnInit() {
+
+    const obs: Observable<string[]> = this.service.getPlanetImage(this.planetImg.planet);
+    obs.subscribe(
+      (param_images_urls: string[]) => {
+
+        this.images = param_images_urls;
+
+      }
+    );
+  }
 }

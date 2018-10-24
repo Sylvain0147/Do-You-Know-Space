@@ -4,7 +4,6 @@ import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,6 +30,9 @@ import { ConstellationsDocComponent } from './constellations-doc/constellations-
 import { AsteroidsDocComponent } from './asteroids-doc/asteroids-doc.component';
 import { ExoplanetsDocComponent } from './exoplanets-doc/exoplanets-doc.component';
 import { NasaService } from './nasa.service';
+
+import { NasaImageService } from "./nasa-image.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,7 +96,7 @@ import { NasaService } from './nasa.service';
       {useHash: true}
     )
   ],
-  providers: [NasaService],
+  providers: [NasaService, NasaImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
