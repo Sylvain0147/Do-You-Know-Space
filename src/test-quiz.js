@@ -18,6 +18,10 @@ var randomQuestion;
 var answers = [];
 var currentScore = 0;
 
+function appelquiz(){
+  btnProvideQuestion();
+}
+
 document.addEventListener("DOMContentLoaded", function(event) { 
   btnProvideQuestion();
 });
@@ -28,6 +32,7 @@ function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2,wrongAnswer3) {
     this.wrongAnswer1 = wrongAnswer1;
     this.wrongAnswer2 = wrongAnswer2;
     this.wrongAnswer3 = wrongAnswer3;
+    
 };
 
 function shuffle(o) {
@@ -51,6 +56,12 @@ function btnProvideQuestion() {
   document.getElementById("answerC").innerHTML= answers[2];
   document.getElementById("answerD").value= answers[3];
   document.getElementById("answerD").innerHTML= answers[3];
+
+  
+  quiz.splice(randomNumber, 1);
+  console.log(quiz.length);
+  
+
 
 }
 
@@ -76,13 +87,14 @@ function answerD_clicked() {
 function adjustScore(isCorrect) {
   debugger;
   if (isCorrect) {
-    currentScore++;
+    currentScore += 10;
   } else {
     if (currentScore > 0) {
-      currentScore--;
+      currentScore -= 2;
   	}
   }
   document.getElementById("score").innerHTML = currentScore;
+  endquiz();
 }
 
 function checkAnswer(answer) {  
@@ -91,5 +103,10 @@ function checkAnswer(answer) {
     btnProvideQuestion();
   } else { 
     adjustScore(false);
-  }	  
+  }	 
+}
+function endquiz(){
+  if(quiz.length == 0){
+    alert("End of the quiz ! Your score is " + currentScore + " !  Press validate");
+}
 }

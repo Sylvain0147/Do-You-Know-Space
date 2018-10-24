@@ -205,7 +205,10 @@
       color: white;
       text-decoration: none;
   }
-.flex { display:flex;}
+.flex { 
+  display:flex;
+  
+}
 
 .field {
   min-width: 200px;
@@ -222,12 +225,23 @@
 
 .button1 {
   height: 40px;
+<<<<<<< HEAD
   width: 50%;
+=======
+  width: 60%;
+>>>>>>> 3d84b6db8ecb0f3bd42dc5abc8bfffc016cec008
   outline: none;
   background: white;
   font-size: 1.5em;
 }
 
 .button1:active {
-  background: blue;
+  background: rgb(54, 199, 85);
+}
+.cachetoi {
+  visibility: visible;
+  
+}
+.boutonClick{
+  visibility: hidden;
 }

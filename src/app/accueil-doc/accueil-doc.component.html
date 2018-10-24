@@ -1,47 +1,48 @@
-
-
 <!-- CORPS PAGE ACCUEIL SECTION DOCUMENTATION -->
 
-<div id = "container-fluid" id="sommaire-doc">
+<div id="container-fluid" id="sommaire-doc">
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4" id="constellations">
-      <button type="button" class="btn btn-secondary btn-lg">Constellations</button>
+
+    <div class="col-1"></div>
+
+      <div class="col-1">
+          <button id="sun" type="button" class="btn btn-secondary btn-lg" routerLink="/sunDoc" title="Sun"></button>
+        </div>
+
+    <div class="col-1">
+      <button id="mercury" type="button" routerLink="/mercuryDoc" class="btn btn-secondary btn-lg" title="Mercury"></button>
     </div>
 
-    <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4" id="exoplanets">
-      <button type="button" class="btn btn-secondary btn-lg">Exoplanets</button>
+    <div class="col-1">
+      <button id="venus" type="button" class="btn btn-secondary btn-lg" routerLink="/venusDoc" title="Venus"></button>
     </div>
 
-        <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4" id="solarsystem">
-          <button type="button" routerLink="/DocArticles" class="btn btn-secondary btn-lg">Solar System </button>
+    <div class="col-1">
+      <button id="earth" type="button" routerLink="/docArticle" class="btn btn-secondary btn-lg" title="Earth"></button>
 
-          <select class="custom-select" id="list">
-            <option selected>Jupiter</option>
-            <option value="1">Mars</option>
-            <option value="2">Neptune</option>
-            <option value="3">Mercury</option>
-            <option value="3">Saturn</option>
-            <option value="3" >Earth</option>
-            <option value="3">Uranus</option>
-            <option value="3">Venus</option>
-          </select>
-      
-        
-      </div>
-   </div> 
+    </div>
 
-   <div class="row text-right">
-    <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="blackhole">
-      <button type="button" class="btn btn-secondary btn-lg">Black Hole</button>
-      </div>
-  
-      <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="bigbang">
-        <button type="button" class="btn btn-secondary btn-lg">Big Bang</button>
-      </div>
-  
-      <div class="col-12 col-sm-12 col-md-4 col lg-4 col-xl-4 bordure" id="datas">
-        <button type="button" class="btn btn-secondary btn-lg">Datas</button>
-      </div>
+    <div class="col-1">
+      <button id="mars" type="button" class="btn btn-secondary btn-lg" routerLink="/marsDoc" title="Mars"></button>
+    </div>
+
+    <div class="col-1">
+      <button id="jupiter" type="button" class="btn btn-secondary btn-lg" routerLink="/jupiterDoc" title="Jupiter"></button>
+    </div>
+
+    <div class="col-2">
+      <button id="saturn" type="button" class="btn btn-secondary btn-lg" routerLink="/saturnDoc" title="Saturn"></button>
+    </div>
+
+    <div class="col-1">
+      <button id="uranus" type="button" class="btn btn-secondary btn-lg" routerLink="/uranusDoc" title="Uranus"></button>
+    </div>
+
+    <div class="col-1">
+      <button id="neptune" type="button" class="btn btn-secondary btn-lg" routerLink="/neptuneDoc" title="Neptune"></button>
+    </div>
+
+    
   </div>
-</div>
 
+</div>
