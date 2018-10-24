@@ -18,7 +18,7 @@ export class NasaImageService {
 
     let url: string = "https://images-api.nasa.gov/search";
     url += "?q=" + param_search + "";
-    // url += "&keywords=[hubble]";
+    // url += "&keywords=[]";
 
     const obs1: Observable<Response> = this.service.get(url);
     return obs1.pipe(
