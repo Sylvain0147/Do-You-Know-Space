@@ -1,20 +1,21 @@
+
 <div class="container">
-<div class="row d-flex justify-content-center">
-<div appQuiz class="container col-lg-3 p-0 m-0 cachetoi">
+<div class="row d-flex justify-content-center align-items-center cachetoi">
+<div class="container col-lg-3 p-0">
     <label for="switch" class="button" onclick="lancetoi(); btnProvideQuestion()" aria-pressed="true" (click)="shouldShow5 = !shouldShow5" [ngClass]="{boutonClick: shouldShow5, btn: !shouldShow5}"><a>Start Quiz</a></label>
 </div>  
 </div>
 </div>
-<div class="container-fluid" aria-pressed="true" (click)="shouldShow5" [ngClass]="{boutonClick: !shouldShow5, btn: shouldShow5}" >
+<div class="container-fluid modetel" aria-pressed="true" (click)="shouldShow5" [ngClass]="{boutonClick: !shouldShow5, btn: shouldShow5}" >
 <div class="container">
     <div class="row justify-content-center">
         <div class="rounded-circle img-fluid"><span class="time">15</span></div>
     </div>
 </div>
 <div class="container">
-    <div class="flex">
-        <div class="field1">Question</div>
-        <div id="question" class="field"></div>
+    <div class="flex container col-8">
+        <div class="field1 container col-8 ">Question</div>
+        <div id="question" class="field col-8"></div>
     </div>
     <div class="flex">
         <div class="field">Answer A</div>
@@ -38,10 +39,10 @@
     </div>
     <div class="container">
         <div class="container col-lg-6 col-md-6 col-12 p-m-quiz-container d-flex justify-content-center">
-            <label for="switch" class="button" routerLink="/highScore" onclick="p()"><a>VALIDATE</a></label>
+            <label for="switch" class="button" routerLink="/landing" onclick="p()"><a>Finish</a></label>
         </div>
     </div>
     </div>
     </div>
-
+    
     <!-- <script src="src/test-quiz.js"></script> -->
