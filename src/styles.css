@@ -32,5 +32,9 @@ body{
     background-attachment: fixed;
 }
 
-
+@media all and (max-width: 560px){
+    body{
+        font-size: 0.7em;
+    }
+}
 

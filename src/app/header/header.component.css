@@ -12,24 +12,15 @@
   
 }
 
-
-
-
-
-@media all and (max-width: 640px){
-    .icone {
-        
-        height: 50%;
-        text-align: center;
-        padding: 0;
-        margin-bottom: -10%;
-    }
+.logoSm{
+  display: none;
 }
-@media all and (min-width: 768px) and (max-width: 1024px){
-    .icone{
-        margin-bottom: 25%;
-    }
-}
+
+
+
+
+
+
 
 /*--------------------------------------------------TEST--------------------------------------------------------*/
 
@@ -99,4 +90,18 @@ div p:nth-of-type(5){
 @-webkit-keyframes reset {
   0%{}
   100%{}
+}
+
+
+
+
+
+@media all and (max-width: 1024px){
+  .title{    
+      display: none;
+  }
+  .logoSm{
+    display: block;
+    text-align: center;
+  }
 }

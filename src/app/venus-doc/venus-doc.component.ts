@@ -14,7 +14,7 @@ export class VenusDocComponent implements OnInit {
   public planetImg: ImgNasa = null;
 
   public img: string = "";
-  public images: string[];
+  public images: any[];
 
   private service: NasaImageService;
  
@@ -31,9 +31,9 @@ export class VenusDocComponent implements OnInit {
 
   ngOnInit() {
 
-    const obs: Observable<string[]> = this.service.getPlanetImage(this.planetImg.planet);
+    const obs: Observable<any[]> = this.service.getPlanetImageInfo(this.planetImg.planet);
     obs.subscribe(
-      (param_images_urls: string[]) => {
+      (param_images_urls: any[]) => {
 
         this.images = param_images_urls;
 

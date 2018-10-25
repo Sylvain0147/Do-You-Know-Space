@@ -10,6 +10,8 @@
     width: 100%;
 }
 
+
+
 #logoFacebook{
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -71,3 +73,12 @@
     color: rgba(29, 243, 40);
 }
 
+
+@media all and (max-width: 1024px){
+   a{
+       font-size: 0.6em;
+   }
+   .logos{
+    padding-top: 1%;
+}
+}

@@ -1,3 +1,11 @@
+.return {
+  position: absolute;
+  top: 18%; left: 5%;
+  color: #0c0;
+  background-color: #222;
+  border-color: #222;
+}
+
 h1 {
     text-align: center;
     font-size: 2em;
@@ -30,7 +38,7 @@ p{
 }
 
 .image {
-    margin : 3%;
+ 
 }
 
 img{
@@ -42,6 +50,11 @@ img{
 .col-3{
   text-align: center;
 
+}
+
+.title{
+  padding-top: 1%;
+  margin-left: 9%;
 }
 
 .zoom {
