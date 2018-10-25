@@ -86,6 +86,22 @@ body{
     .container-fluid{
         height: 400px;
       
+.return {
+    margin: 10%;
+    margin-left: 38%;
+    padding: 1%;
+    width: 20%;
+    text-align: center;
+    color: #0c0;
+    background-color: rgba(2,2,2,0.6);
+    border-color: #222;
+    border-radius: 15%;
+  }
+
+
+@media all and (max-width: 560px){
+    .col-12{
+        text-align: center;
     }
    
 }
