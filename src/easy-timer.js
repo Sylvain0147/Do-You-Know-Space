@@ -5,7 +5,7 @@ function stopChrono(){
     clearTimeout(sylvain_chrono_trigger);
 }
 
-function chrono(param_secondes, display){
+function easychrono(param_secondes, display){
     
 
     var seconds = parseInt(param_secondes % 60, 10);
@@ -17,7 +17,7 @@ function chrono(param_secondes, display){
         stopChrono();
         sylvain_chrono_trigger = setTimeout(
             function(){
-                chrono(param_secondes - 1, display);
+                easychrono(param_secondes - 1, display);
                 
             }, 
             1000
@@ -27,19 +27,19 @@ function chrono(param_secondes, display){
        stopChrono();
         sylvain_chrono_trigger = setTimeout(
             function(){
-                chrono(10, display);
-                btnProvideQuestion();
+                easychrono(10, display);
+                easybtnProvideQuestion();
             }, 
             1000
         );
     }
 }
 
-function lancetoi() {
+function easylancetoi() {
     
-    var display = document.querySelector('.time');
+    var display = document.querySelector('.easytime');
     stopChrono();
-    chrono(10, display);
+    easychrono(10, display);
 
 };
 

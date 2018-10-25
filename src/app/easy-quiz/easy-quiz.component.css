@@ -8,8 +8,9 @@
     width: 100%;
     text-align: center;
 }
-
-
+.field {
+ 
+}
 .rounded-circle{
   color: white;
   font-size: 2em;
@@ -25,7 +26,7 @@
 #question{
   background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
-  width: 100%; 
+  width: 90%; 
   border: solid 0.5px rgba(234, 248, 106, 0.589);
   margin: 3%;
 }
@@ -210,7 +211,7 @@
 }
 
 .field {
-  max-width: 100%;
+  min-width: 200px;
   min-height: 30px;
   margin: 1%;
   font-size: 1.5em;
@@ -220,7 +221,6 @@
   padding: 2%;
    color: white;
    font-size: 2em;
-   
 }
 
 .button1 {
@@ -240,7 +240,6 @@
 }
 .boutonClick{
   display: none;
-  
 }
 @media all and (max-width: 540px){
   .boutonclick{
@@ -261,5 +260,3 @@
   font-size: 1em;
 }
 }
-
-

@@ -32,6 +32,7 @@ import { ExoplanetsDocComponent } from './exoplanets-doc/exoplanets-doc.componen
 import { NasaService } from './nasa.service';
 
 import { NasaImageService } from "./nasa-image.service";
+import { EasyQuizComponent } from './easy-quiz/easy-quiz.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { NasaImageService } from "./nasa-image.service";
     SunDocComponent,
     ConstellationsDocComponent,
     AsteroidsDocComponent,
-    ExoplanetsDocComponent
+    ExoplanetsDocComponent,
+    EasyQuizComponent
   ],
   imports: [
     BrowserModule,
@@ -88,6 +90,7 @@ import { NasaImageService } from "./nasa-image.service";
         { path: "constellationsDoc", component: ConstellationsDocComponent, pathMatch: "full"},
         { path: "exoplanetsDoc", component: ExoplanetsDocComponent, pathMatch: "full"},
         { path: "asteroidsDoc", component: AsteroidsDocComponent, pathMatch: "full"},
+        { path: "easy-quiz", component: EasyQuizComponent, pathMatch: "full"},
         { path: "", redirectTo: "landing", pathMatch: "full"}
 
         

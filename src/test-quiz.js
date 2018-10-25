@@ -107,6 +107,6 @@ function checkAnswer(answer) {
 }
 function endquiz(){
   if(quiz.length == 0){
-    alert("End of the quiz ! Your score is " + currentScore + " !  Press validate");
+    alert("End of the quiz ! Your score is " + currentScore + " !  Press finish");
 }
 }
