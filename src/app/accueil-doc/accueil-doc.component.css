@@ -2,8 +2,8 @@ body{
     padding-bottom: 0;
 }
 
-.container-fluid{
-    height: 50vh;
+.opak{
+  
     background-color: rgba(2,2,2,0.6);
 }
 
@@ -84,9 +84,8 @@ body{
 
 .return {
     margin: 5%;
-    margin-left: 38%;
     padding: 1%;
-    width: 20%;
+    
     text-align: center;
     color: #0c0;
     background-color: rgba(2,2,2,0.6);
@@ -99,4 +98,18 @@ body{
     .col-12{
         text-align: center;
     }
+}
+@media all and (max-width: 560px){
+    .col-10{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 560px){
+    .opak{
+    height: 50vh;
+    
+}
+
 }
