@@ -85,6 +85,8 @@ body{
 @media all and (min-width: 1024px){
     .container-fluid{
         height: 400px;
+    }
+}
       
 .return {
     margin: 10%;
