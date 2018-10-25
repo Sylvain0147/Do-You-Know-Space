@@ -37,9 +37,6 @@ p{
     margin-bottom: 1%;
 }
 
-.image {
- 
-}
 
 img{
   height: 250px;
@@ -82,7 +79,7 @@ img{
     box-sizing:border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size:20px;
-    height:600px;
+    height:800px;
     overflow:auto;
     padding:3%;
     width:100%;

@@ -6,7 +6,6 @@
   border-color: #222;
 }
 
-
 h1 {
     text-align: center;
     font-size: 2em;
@@ -38,9 +37,6 @@ p{
     margin-bottom: 1%;
 }
 
-.image {
-    margin : 3%;
-}
 
 img{
   height: 250px;
@@ -51,6 +47,11 @@ img{
 .col-3{
   text-align: center;
 
+}
+
+.title{
+  padding-top: 1%;
+  margin-left: 9%;
 }
 
 .zoom {
@@ -78,7 +79,7 @@ img{
     box-sizing:border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size:20px;
-    height:600px;
+    height:800px;
     overflow:auto;
     padding:3%;
     width:100%;

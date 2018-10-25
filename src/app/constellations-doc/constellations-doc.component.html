@@ -40,12 +40,14 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-11">
       <div>
-        <a href="{{images[0]}}" data-fancybox data-caption="">
-          <img src="{{images[0]}}" alt="photo" class="img-fluid zoom" />
+        <a href="{{images[0].url}}" data-fancybox data-caption="">
+          <img src="{{images[0].url}}" alt="photo" class="img-fluid zoom" />
         </a>
-        <a href="{{images[1]}}" data-fancybox data-caption="">
-          <img src="{{images[1]}}" alt="photo" class="img-fluid zoom" />
+        <p class="title">{{images[0].title}}</p>
+        <a href="{{images[1].url}}" data-fancybox data-caption="">
+          <img src="{{images[1].url}}" alt="photo" class="img-fluid zoom" />
         </a>
+        <p class="title">{{images[1].title}}</p>
       </div>
     </div>
   </div>
