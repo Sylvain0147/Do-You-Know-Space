@@ -29,6 +29,7 @@ import { SunDocComponent } from './sun-doc/sun-doc.component';
 import { ConstellationsDocComponent } from './constellations-doc/constellations-doc.component';
 import { AsteroidsDocComponent } from './asteroids-doc/asteroids-doc.component';
 import { ExoplanetsDocComponent } from './exoplanets-doc/exoplanets-doc.component';
+import { NasaService } from './nasa.service';
 
 import { NasaImageService } from "./nasa-image.service";
 
@@ -95,7 +96,7 @@ import { NasaImageService } from "./nasa-image.service";
       {useHash: true}
     )
   ],
-  providers: [NasaImageService],
+  providers: [NasaService, NasaImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

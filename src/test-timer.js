@@ -18,6 +18,17 @@ function chrono(param_secondes, display){
         sylvain_chrono_trigger = setTimeout(
             function(){
                 chrono(param_secondes - 1, display);
+                
+            }, 
+            1000
+        );
+    }
+    if(param_secondes == 0) {
+       stopChrono();
+        sylvain_chrono_trigger = setTimeout(
+            function(){
+                chrono(15, display);
+                btnProvideQuestion;
             }, 
             1000
         );

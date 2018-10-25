@@ -3,6 +3,7 @@ import { NasaImageService } from "../nasa-image.service";
 import { ImgNasa } from "../img-nasa";
 import { Observable } from "rxjs";
 
+
 @Component({
   selector: 'app-venus-doc',
   templateUrl: './venus-doc.component.html',
@@ -16,6 +17,7 @@ export class VenusDocComponent implements OnInit {
   public images: string[];
 
   private service: NasaImageService;
+ 
 
 
   constructor(
@@ -37,5 +39,6 @@ export class VenusDocComponent implements OnInit {
 
       }
     );
+    
   }
 }

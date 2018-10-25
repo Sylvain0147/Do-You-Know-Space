@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ImgInfo } from '../img-info';
+import { NasaService } from '../nasa.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-doc-article',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocArticleComponent implements OnInit {
 
-  constructor() { }
+  public imgInfo: ImgInfo = null;
+  public img: string = "";
+  private service: NasaService;
+  public images: string[];
 
-  ngOnInit() {
+  constructor(param_nasa_service: NasaService){
+    this.imgInfo = new ImgInfo("earth","earth");
+    this.service = param_nasa_service;
+    this.img = "";
+    this.images = [];
+  }
+  ngOnInit(){
+    const obs: Observable<string[]> = this.service.getImages(this.imgInfo.img);
+    obs.subscribe((param_images_urls: string[]) => {
+      this.images = param_images_urls;
+    }
+
+    );
   }
 
 }
