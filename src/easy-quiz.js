@@ -93,6 +93,6 @@ function easycheckAnswer(answer) {
 }
 function easyendquiz(){
   if(easyquiz.length == 0){
-    alert("End of the easyquiz ! Your score is " + easycurrentScore + " !  Press validate");
+    alert("End of the easyquiz ! Your score is " + easycurrentScore + " !  Press finish");
 }
 }
