@@ -34,6 +34,7 @@ import { NasaService } from './nasa.service';
 import { NasaImageService } from "./nasa-image.service";
 import { EasyQuizComponent } from './easy-quiz/easy-quiz.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

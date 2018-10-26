@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-question.component.css']
 })
 export class PageQuestionComponent implements OnInit {
-  exemple: string = "answer"
+  exemple: string = "answer";
+  questionStyle:any = {visibility: "hidden"};
   
   constructor() { }
 
+  public launcher():void{
+    this.questionStyle.visibility = "visible";
+  }
+
   ngOnInit() {
+   
   }
 
 }

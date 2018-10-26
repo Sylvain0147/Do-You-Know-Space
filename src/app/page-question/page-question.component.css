@@ -1,9 +1,4 @@
-.p-question{
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    float: right;
-}
+
 .input{
     width: 100%;
     text-align: center;
@@ -25,9 +20,12 @@
 #question{
   background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
-  width: 100%; 
   border: solid 0.5px rgba(234, 248, 106, 0.589);
   margin: 3%;
+}
+
+#question p{
+  text-align: center;
 }
 
 
@@ -252,6 +250,7 @@
   }
   .modetel{
     width:100%;
+    margin-top: -30%;
   }
   .flex{
     display: initial;
@@ -259,6 +258,12 @@
   .field{
   padding: 2%;
   font-size: 1em;
-}
+  }
+  .field1{
+    font-size: 1em;
+  }
+  .button1{
+    font-size: 1em;
+  }
 }
 

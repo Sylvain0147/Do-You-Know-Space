@@ -20,16 +20,12 @@ var easycurrentScore = 0;
 
 
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  easybtnProvideQuestion();
-});
+
 
 function easyQuestion(question,rightAnswer,wrongAnswer1) {
     this.question = question;
     this.rightAnswer = rightAnswer;
     this.wrongAnswer1 = wrongAnswer1;
-    
-    
 };
 
 function shuffle(o) {
@@ -44,7 +40,7 @@ function easybtnProvideQuestion() {
   easyanswers = [easyrandomQuestion.rightAnswer, easyrandomQuestion.wrongAnswer1];
   shuffle(easyanswers);
   
-  document.getElementById("question").innerHTML= easyrandomQuestion.question;
+  document.getElementById("question").innerHTML= '<p>'+easyrandomQuestion.question+'</p>';
   document.getElementById("easyanswerA").value= easyanswers[0];
   document.getElementById("easyanswerA").innerHTML= easyanswers[0];
   document.getElementById("easyanswerB").value= easyanswers[1];

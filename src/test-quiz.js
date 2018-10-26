@@ -22,9 +22,6 @@ function appelquiz(){
   btnProvideQuestion();
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  btnProvideQuestion();
-});
 
 function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2,wrongAnswer3) {
     this.question = question;
@@ -47,7 +44,7 @@ function btnProvideQuestion() {
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2, randomQuestion.wrongAnswer3];
   shuffle(answers);
   
-  document.getElementById("question").innerHTML= randomQuestion.question;
+  document.getElementById("question").innerHTML= '<p>'+randomQuestion.question+'</p>';
   document.getElementById("answerA").value= answers[0];
   document.getElementById("answerA").innerHTML= answers[0];
   document.getElementById("answerB").value= answers[1];
