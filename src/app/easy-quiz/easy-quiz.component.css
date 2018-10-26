@@ -211,7 +211,7 @@
 }
 
 .field {
-  min-width: 200px;
+  max-width: 100%;
   min-height: 30px;
   margin: 1%;
   font-size: 1.5em;
@@ -251,6 +251,7 @@
   }
   .modetel{
     width:100%;
+    margin-top: -30%;
   }
   .flex{
     display: initial;
@@ -258,7 +259,11 @@
   .field{
   padding: 2%;
   font-size: 1em;
-  
   }
-
+  .field1{
+    font-size: 1em;
+  }
+  .button1{
+    font-size: 1em;
+  }
 }
