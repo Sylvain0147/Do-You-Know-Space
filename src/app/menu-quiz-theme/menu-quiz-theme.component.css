@@ -1,6 +1,7 @@
 
-#theme{
-  margin-top: 10%;
+.theme{
+  top: 35%;
+  position: absolute;
 }
 
 .stretch, .button:after, .button:before {

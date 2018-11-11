@@ -92,3 +92,21 @@ function easyendquiz(){
     alert("End of the easyquiz ! Your score is " + easycurrentScore + " !  Press finish");
 }
 }
+function easyRestartQuiz(){
+  easyquiz[0] = new easyQuestion("Which planet is the closest to Sun?", "Mercury", "Venus");
+  easyquiz[1] = new easyQuestion("What color is Mars?", "Red", "White");
+  easyquiz[2] = new easyQuestion("What is the name of the Earth's satellite?", "Moon", "Discovery");
+  easyquiz[3] = new easyQuestion("How many planets are in the Solar System ?", "8", "6");
+  easyquiz[4] = new easyQuestion("In which year men set foot on Moon?", "1969", "1988");
+  easyquiz[5] = new easyQuestion("Which astrophysicist is the Humanity's enemy?","Neil De Grasse Tyson", "Mohammed Ali");
+  easyquiz[6] = new easyQuestion("Aldebaran is a star of which constellation?", "Taurus", "Libra");
+  easyquiz[7] = new easyQuestion("How long is a day on Saturn?", "10h47", "3 days");
+  easyquiz[8] = new easyQuestion("How many satellites Pluto has?", "5", "4");
+  easyquiz[9] = new easyQuestion("Where do many comets come from?", "Oort cloud", "Saturn's belt");
+  easyquiz[10] = new easyQuestion("How many tails a comet have?", "2", "1");
+  easyquiz[11] = new easyQuestion("The Moon does the tour of Earth in how many days?", "28", "1");
+  easyquiz[12] = new easyQuestion("In which year the first exoplanet has been discovered?", "1989", "2004");
+  easyquiz[13] = new easyQuestion("What's the Sun's diameter?", "1 392 000 km", "2 678 000km")
+  easybtnProvideQuestion();
+  easycurrentScore = 0;
+}

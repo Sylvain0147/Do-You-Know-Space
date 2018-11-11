@@ -1,24 +1,21 @@
 
-.p-m-quiz-row{
-    margin-top: 5%;
-}
-.p-m-quiz-container{
-    margin-top: 5%;
-}
-.placetoibien{
-    margin-top: 10%;
+.middle{
+    position: absolute;
+    top: 50%;
     
 }
-
+@media screen and (max-width: 570px){
+  .middle{
+    top: 40%;
+  }
+  .marge{
+    margin-bottom: 8%;
+  }
+}
 a{
     color: white;
 }
 
-
-.tailleDiv {
-    width: 60%;
-    font-size: 2rem;
-}
 
 /*-----------------------------------------------------------BUTTON-EASY------------------------------------------------*/
 

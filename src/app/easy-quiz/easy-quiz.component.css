@@ -234,8 +234,10 @@
 .button1:active {
   background: rgb(54, 199, 85);
 }
-.cachetoi {
-  display: initial;
+.hidden {
+  position: absolute;
+  top: 40%;
+  width: 100%;
   
 }
 .boutonClick{
@@ -245,8 +247,7 @@
   .boutonclick{
     display: none;
   }
-  .cachetoi{
-    margin-top: 55%;
+  .hidden{
     text-align: center;
   }
   .modetel{

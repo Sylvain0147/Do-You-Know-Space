@@ -1,26 +1,22 @@
-.boutonLanding{
-    background-image:linear-gradient(#000000, red, blue, yellow, green, purple, pink);
-    border-radius: 100%;
-    color: #4ff2e7;
-    margin-bottom: 10%;
-    width: 100%;
-    box-shadow: 5px 5px 5px orange;
-    font-weight: bold;
-    
-}
-
-.boutonLanding:hover{
-    position: relative;
-    top: 3px;
-    left: 3px;
-    box-shadow: none;
-    font-weight: bolder;
-}
 
 #containerLanding{
-    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    top: 40%;
+    position: absolute;
 }
-
+.marge{
+  width: 60%;
+  height: 100%;
+}
+@media screen and (max-width: 570px){
+  .margeButton{
+    margin-bottom: 25%;
+  }
+  #containerLanding{
+    top: 35%;
+  }
+}
 /*-----------------------------------------------------TEST-----------------------------------------------------------------*/
 
 .stretch, .button:after, .button:before {
@@ -31,7 +27,7 @@
     top: 0;
   }    
   .button {
-    width: 70%;
+    width: 80%;
     text-align: center;
     background: black;
     background-size: 100%;

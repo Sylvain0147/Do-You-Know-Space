@@ -17,6 +17,7 @@ quiz[12] = new Question("In which year the first exoplanet has been discovered?"
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
+var exit1 = 0;
 
 function appelquiz(){
   btnProvideQuestion();
@@ -82,7 +83,6 @@ function answerD_clicked() {
 }
 
 function adjustScore(isCorrect) {
-  debugger;
   if (isCorrect) {
     currentScore += 10;
   } else {
@@ -106,4 +106,23 @@ function endquiz(){
   if(quiz.length == 0){
     alert("End of the quiz ! Your score is " + currentScore + " !  Press finish");
 }
+}
+function restartquiz(){
+    quiz[0] = new Question("Which planet is the closest to Sun?", "Mercury", "Venus", "Mars", "Earth");
+    quiz[1] = new Question("What color is Mars?", "Red", "White", "Green", "Dark");
+    quiz[2] = new Question("What is the name of the Earth's satellite?", "Moon", "Discovery", "Astra", "Spoutnik");
+    quiz[3] = new Question("How many planets are in the Solar System ?", "8", "6", "4", "7");
+    quiz[4] = new Question("In which year men set foot on Moon?", "1969", "1988", "1968", "1967");
+    quiz[5] = new Question("Which astrophysicist is the Humanity's enemy?","Neil De Grasse Tyson", "Mohammed Ali", "Joe Frazier", "Georges Foreman");
+    quiz[6] = new Question("Aldebaran is a star of which constellation?", "Taurus", "Libra", "Scorpio","Cancer");
+    quiz[7] = new Question("How long is a day on Saturn?", "10h47", "3 days", "17h45","2 months");
+    quiz[8] = new Question("How many satellites Pluto has?", "5", "4", "3","1");
+    quiz[9] = new Question("Where do many comets come from?", "Oort cloud", "Saturn's belt", "Sun","Kirk cloud");
+    quiz[10] = new Question("How many tails a comet have?", "2", "1", "4","3");
+    quiz[11] = new Question("The Moon does the tour of Earth in how many days?", "28", "1", "7","365");
+    quiz[12] = new Question("In which year the first exoplanet has been discovered?", "1989", "2004", "1965","1976");
+    quiz[13] = new Question("What's the Sun's diameter?", "1 392 000 km", "2 678 000km", "678 000km", " 2 219 000km")
+
+  btnProvideQuestion();
+  currentScore = 0;
 }

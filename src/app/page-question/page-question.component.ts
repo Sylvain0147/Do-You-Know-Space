@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageQuestionComponent implements OnInit {
   exemple: string = "answer";
-  questionStyle:any = {visibility: "hidden"};
+  questionStyle:any = {display: "none"};
   
   constructor() { }
 
   public launcher():void{
-    this.questionStyle.visibility = "visible";
+    this.questionStyle.display = "initial";
   }
 
   ngOnInit() {
