@@ -10,7 +10,8 @@
     position: absolute;
     right: 0;
     top: 0;
-  }    
+  }  
+  
   .button {
     width: 70%;
     text-align: center;
@@ -37,6 +38,7 @@
     cursor: pointer;
     z-index: 99;
   }
+
   .button:after {
     -moz-box-shadow: rgba(111, 233, 74, 0.75) 0 0 15px 2px;
     -webkit-box-shadow: rgba(111, 233, 74, 0.75) 0 0 15px 2px;
@@ -60,7 +62,7 @@
     -webkit-animation: scan 2s infinite;
     opacity: 1;
   }
-  
+   
   @-webkit-keyframes glitch {
     0% {
       -moz-transform: skewX(0deg);
