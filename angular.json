@@ -26,10 +26,10 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/test-timer.js",
-              "src/easy-timer.js",
-              "src/test-quiz.js",
-              "src/test-quiz.js"
+              "./src/test-timer.js",
+              "./src/easy-timer.js",
+              "./src/test-quiz.js",
+              "./src/test-quiz.js"
             ]
           },
           "configurations": {
