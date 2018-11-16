@@ -12,8 +12,8 @@ export class JupiterDocComponent implements OnInit {
 
   public planetImg: ImgNasa = null;
 
-  public img: string = "";
-  public images: string[];
+  public img: any = "";
+  public images: any[];
 
   private service: NasaImageService;
 

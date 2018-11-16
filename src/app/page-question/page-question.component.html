@@ -1,12 +1,12 @@
 <div class="container-fluid">
     <div class="row w-100 justify-content-center hidden">
         <div class="col-sm-12 col-md-5 col-lg-5 p-0 d-flex justify-content-center">
-            <label for="switch" class="button" (click)="launcher()" onclick="lancetoi(); btnProvideQuestion();" aria-pressed="true" (click)="shouldShow5 = !shouldShow5"
-                [ngClass]="{boutonClick: shouldShow5, btn: !shouldShow5}"><a>Start Quiz</a></label>
+            <label for="switch" class="button" (click)="launcher(); hideQuestion();"  [ngStyle]="hideStyle" onclick="lancetoi(); btnProvideQuestion();" aria-pressed="true"
+                ><a>Start Quiz</a></label>
         </div>
     </div>
 </div>
-<div class="container-fluid modetel" aria-pressed="true" (click)="shouldShow5" [ngStyle]="questionStyle">
+<div class="container-fluid modetel" aria-pressed="true" [ngStyle]="questionStyle">
     <div class="container">
         <div class="row justify-content-center">
             <div class="rounded-circle img-fluid"><span class="time">10</span></div>

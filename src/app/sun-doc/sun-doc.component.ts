@@ -13,7 +13,7 @@ export class SunDocComponent implements OnInit {
   public planetImg: ImgNasa = null;
 
   public img: string = "";
-  public images: string[];
+  public images: any[];
 
   private service: NasaImageService;
 

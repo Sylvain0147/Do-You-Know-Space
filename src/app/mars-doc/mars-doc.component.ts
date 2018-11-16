@@ -13,7 +13,7 @@ export class MarsDocComponent implements OnInit {
   public planetImg: ImgNasa = null;
 
   public img: string = "";
-  public images: string[];
+  public images: any[];
 
   private service: NasaImageService;
 
