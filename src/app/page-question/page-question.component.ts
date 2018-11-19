@@ -19,6 +19,7 @@ export class PageQuestionComponent implements OnInit {
   public hideQuestion(): void{
     this. hideStyle.display = "none";
   }
+  
 
   ngOnInit() {
    
